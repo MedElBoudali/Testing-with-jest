@@ -1,12 +1,16 @@
 const googleDatabase = [
-    'cats.com',
-    'dogs.com',
-    'catsfood.com',
-    'ilovecats',
-    'animals.com',
-    'pets.com'
+  'cats.com',
+  'dogs.com',
+  'catsfood.com',
+  'catsmeow.com',
+  'ilovecats',
+  'animals.com',
+  'pets.com'
 ];
 
-const googlSearch = (searchIput, DB) => {
-    const matches = 
-}
+const googleSearch = (searchIput, DB) => {
+  const matches = DB.filter(data => data.includes(searchIput));
+  return matches.length ? matches : [];
+};
+
+module.exports = googleSearch;

@@ -6,7 +6,7 @@
   "author": "MedEBoudali <med.sneaky@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "run": "node App.js",
+    "dev": "node App.js",
     "test": "jest --watch *.js"
   },
   "devDependencies": {
