@@ -1,0 +1,15 @@
+{
+  "name": "test-with-jest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MedElBoudali/Testing-with-jest.git",
+  "author": "MedEBoudali <med.sneaky@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "run": "node App.js",
+    "test": "jest --watch *.js"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
