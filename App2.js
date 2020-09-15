@@ -4,9 +4,11 @@ const fetch = require('node-fetch');
 const getPeoplePromise = fetch =>
   fetch('https://swapi.dev/api/people')
     .then(response => response.json())
-    .then(data => ({ funcType: 'Promise', count: data.count, results: data.results }));
+    .then(data => {
+      return { funcType: 'Promise', count: data.count, results: data.results };
+    });
 
-getPeoplePromise(fetch);
+// getPeoplePromise(fetch);
 
 // Async/Await
 const getPeopleAsync = async fetch => {
@@ -15,6 +17,6 @@ const getPeopleAsync = async fetch => {
   return { funcType: 'Async/Await', count: getData.count, results: getData.results };
 };
 
-getPeopleAsync(fetch);
+// getPeopleAsync(fetch);
 
 module.exports = { getPeoplePromise, getPeopleAsync };
