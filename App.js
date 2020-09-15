@@ -10,7 +10,7 @@ const googleDatabase = [
 
 const googleSearch = (searchIput, DB) => {
   const matches = DB.filter(data => data.includes(searchIput));
-  return matches.length ? matches : [];
+  return matches.length > 3 ? matches.slice(0, 3) : matches;
 };
 
 module.exports = googleSearch;
