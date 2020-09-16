@@ -39,7 +39,7 @@ it('calls swapi to get people with async/await', async () => {
   //1st assertion
   expect(funcType).toEqual('Async/Await');
   //2nd assertion
-  expect(count).toBeGreaterThan(5);
+  expect(count).toBeGreaterThan(4);
   //3rd assertion
-  expect(results.length).toBeGreaterThan(5);
+  expect(results.length).toBeGreaterThan(4);
 }, 30000);
